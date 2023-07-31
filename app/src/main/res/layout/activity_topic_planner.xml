@@ -1,0 +1,44 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/idea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have ideas ? take a note"
+        android:textColor="@color/maincolor"
+        android:textStyle="bold"
+        android:fontFamily="@font/futura_medium"
+        android:textSize="@dimen/_18sdp"/>
+
+    <ImageView
+        android:id="@+id/addButton"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/addnote"
+        android:layout_margin="16dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/idea"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/ll1" />
+
+</RelativeLayout>

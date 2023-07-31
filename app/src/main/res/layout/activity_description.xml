@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/futura_medium"
+        android:text="YT-KIT SEO TOOLS"
+        android:textColor="@color/maincolor"
+        android:textSize="@dimen/_18sdp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_6sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:backgroundTint="#A356F4"
+        >
+
+        <EditText
+            android:id="@+id/video_link"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="Enter VIDEO URL / LINK"
+            android:textColorHint="@color/white"
+            android:background="@color/transparent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/get_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_link"
+        android:layout_marginTop="20dp"
+        android:text="Get"/>
+
+</LinearLayout>
